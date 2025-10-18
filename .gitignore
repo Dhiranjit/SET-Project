@@ -1,6 +1,7 @@
 # Data directories
 Stock Data/
 Stock News/
+Stock Data Hourly/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
