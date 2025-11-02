@@ -1,5 +1,5 @@
 {
-  "report_generated": "2025-11-02 04:39:58",
+  "report_generated": "2025-11-02 04:48:33",
   "dataset_info": {
     "total_stocks": 10,
     "stock_list": [
@@ -18,16 +18,16 @@
     "total_test_samples": 2910
   },
   "baseline_model": {
-    "average_accuracy": 0.5412371134020619,
-    "average_precision": 0.5419779759430117,
-    "average_recall": 0.6837694508216061,
-    "average_f1": 0.5794102154401657,
-    "average_loss": 0.7080225561287804,
-    "std_accuracy": 0.01538949466499933,
-    "best_stock": "TCS",
-    "best_accuracy": 0.5670103092783505,
-    "worst_stock": "INFY",
-    "worst_accuracy": 0.5085910652920962
+    "average_accuracy": 0.5274914089347079,
+    "average_precision": 0.5257075707174276,
+    "average_recall": 0.7348862342069765,
+    "average_f1": 0.608179420483245,
+    "average_loss": 0.6994020707828482,
+    "std_accuracy": 0.030360500070328925,
+    "best_stock": "SBIN",
+    "best_accuracy": 0.570446735395189,
+    "worst_stock": "BAJFINANCE",
+    "worst_accuracy": 0.4707903780068728
   },
   "sentiment_model": {
     "average_accuracy": 0.5536082474226804,
@@ -56,22 +56,22 @@
   },
   "statistical_tests": {
     "paired_t_test": {
-      "t_statistic": 2.1083457854961822,
-      "p_value": 0.06424208798950812,
-      "significant": false
+      "t_statistic": 3.7666660225940167,
+      "p_value": 0.004439188907486986,
+      "significant": true
     },
     "wilcoxon_test": {
-      "w_statistic": 10.5,
-      "p_value": 0.09375,
-      "significant": false
+      "w_statistic": 1.0,
+      "p_value": 0.0078125,
+      "significant": true
     },
     "effect_size": {
-      "cohens_d": 0.6667174777384732,
-      "interpretation": "Medium to large effect"
+      "cohens_d": 1.1911243816564343,
+      "interpretation": "Large effect"
     },
     "confidence_interval_95": {
-      "lower": -0.0009025185414464204,
-      "upper": 0.025644786582683536
+      "lower": 0.010431775649302439,
+      "upper": 0.04180190132664262
     }
   },
   "sector_analysis": {
@@ -82,42 +82,42 @@
       "avg_sentiment": 0.5704
     },
     "Energy": {
-      "avg_improvement": -0.0103,
-      "stock_count": 1,
-      "avg_baseline": 0.5361,
-      "avg_sentiment": 0.5258
-    },
-    "FMCG": {
-      "avg_improvement": 0.0103,
-      "stock_count": 1,
-      "avg_baseline": 0.543,
-      "avg_sentiment": 0.5533
-    },
-    "Financial Services": {
-      "avg_improvement": -0.0103,
-      "stock_count": 1,
-      "avg_baseline": 0.5498,
-      "avg_sentiment": 0.5395
-    },
-    "IT": {
-      "avg_improvement": 0.0172,
-      "stock_count": 2,
-      "avg_baseline": 0.5378,
-      "avg_sentiment": 0.555
-    },
-    "Telecom": {
       "avg_improvement": -0.0034,
       "stock_count": 1,
       "avg_baseline": 0.5292,
+      "avg_sentiment": 0.5258
+    },
+    "FMCG": {
+      "avg_improvement": 0.0206,
+      "stock_count": 1,
+      "avg_baseline": 0.5326,
+      "avg_sentiment": 0.5533
+    },
+    "Financial Services": {
+      "avg_improvement": 0.0687,
+      "stock_count": 1,
+      "avg_baseline": 0.4708,
+      "avg_sentiment": 0.5395
+    },
+    "IT": {
+      "avg_improvement": 0.0223,
+      "stock_count": 2,
+      "avg_baseline": 0.5326,
+      "avg_sentiment": 0.555
+    },
+    "Telecom": {
+      "avg_improvement": 0.0275,
+      "stock_count": 1,
+      "avg_baseline": 0.4983,
       "avg_sentiment": 0.5258
     }
   },
   "key_insights": [
     "Sentiment-enhanced model shows 2.32% average improvement over baseline.",
-    "Improvement is not statistically significant (p=0.0642 >= 0.05).",
+    "Improvement is statistically significant (p=0.0044 < 0.05).",
     "Sentiment features improved performance for 6/10 stocks (60.0%).",
-    "Best performing sector: Banking with 0.0258 average improvement.",
-    "Effect size (Cohen's d): 0.6667 - Medium to large effect.",
+    "Best performing sector: Financial Services with 0.0687 average improvement.",
+    "Effect size (Cohen's d): 1.1911 - Large effect.",
     "Best improvement: INFY (+7.43%).",
     "Largest degradation: BAJFINANCE (-1.88%)."
   ]
