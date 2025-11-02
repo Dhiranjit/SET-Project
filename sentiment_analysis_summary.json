@@ -1,0 +1,12 @@
+{
+  "total_stocks": 10,
+  "improved_count": 5,
+  "degraded_count": 5,
+  "baseline_avg_accuracy": 0.5336769759450172,
+  "sentiment_avg_accuracy": 0.543298969072165,
+  "overall_improvement": 0.009621993127147843,
+  "best_stock": "INFY",
+  "best_improvement": 0.06529209621993126,
+  "worst_stock": "TCS",
+  "worst_change": -0.02405498281786933
+}
