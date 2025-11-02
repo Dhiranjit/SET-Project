@@ -1,12 +1,124 @@
 {
-  "total_stocks": 10,
-  "improved_count": 5,
-  "degraded_count": 5,
-  "baseline_avg_accuracy": 0.5336769759450172,
-  "sentiment_avg_accuracy": 0.543298969072165,
-  "overall_improvement": 0.009621993127147843,
-  "best_stock": "INFY",
-  "best_improvement": 0.06529209621993126,
-  "worst_stock": "TCS",
-  "worst_change": -0.02405498281786933
+  "report_generated": "2025-11-02 04:39:58",
+  "dataset_info": {
+    "total_stocks": 10,
+    "stock_list": [
+      "RELIANCE",
+      "HDFCBANK",
+      "TCS",
+      "BHARTIARTL",
+      "ICICIBANK",
+      "SBIN",
+      "INFY",
+      "KOTAKBANK",
+      "BAJFINANCE",
+      "HINDUNILVR"
+    ],
+    "total_train_samples": 11600,
+    "total_test_samples": 2910
+  },
+  "baseline_model": {
+    "average_accuracy": 0.5412371134020619,
+    "average_precision": 0.5419779759430117,
+    "average_recall": 0.6837694508216061,
+    "average_f1": 0.5794102154401657,
+    "average_loss": 0.7080225561287804,
+    "std_accuracy": 0.01538949466499933,
+    "best_stock": "TCS",
+    "best_accuracy": 0.5670103092783505,
+    "worst_stock": "INFY",
+    "worst_accuracy": 0.5085910652920962
+  },
+  "sentiment_model": {
+    "average_accuracy": 0.5536082474226804,
+    "average_precision": 0.5494130217456527,
+    "average_recall": 0.671117882079536,
+    "average_f1": 0.5999366504246723,
+    "average_loss": 0.7656771439969334,
+    "std_accuracy": 0.019266473524813116,
+    "best_stock": "SBIN",
+    "best_accuracy": 0.584192439862543,
+    "worst_stock": "RELIANCE",
+    "worst_accuracy": 0.5257731958762887
+  },
+  "comparison": {
+    "average_improvement_accuracy": 0.012371134020618539,
+    "average_improvement_percentage": 2.320681855854798,
+    "stocks_improved": 6,
+    "stocks_degraded": 4,
+    "stocks_unchanged": 0,
+    "max_improvement_stock": "INFY",
+    "max_improvement_value": 0.0378006872852233,
+    "max_improvement_pct": 7.432432432432429,
+    "min_improvement_stock": "BAJFINANCE",
+    "min_improvement_value": -0.0103092783505155,
+    "min_improvement_pct": -1.875000000000013
+  },
+  "statistical_tests": {
+    "paired_t_test": {
+      "t_statistic": 2.1083457854961822,
+      "p_value": 0.06424208798950812,
+      "significant": false
+    },
+    "wilcoxon_test": {
+      "w_statistic": 10.5,
+      "p_value": 0.09375,
+      "significant": false
+    },
+    "effect_size": {
+      "cohens_d": 0.6667174777384732,
+      "interpretation": "Medium to large effect"
+    },
+    "confidence_interval_95": {
+      "lower": -0.0009025185414464204,
+      "upper": 0.025644786582683536
+    }
+  },
+  "sector_analysis": {
+    "Banking": {
+      "avg_improvement": 0.0258,
+      "stock_count": 4,
+      "avg_baseline": 0.5447,
+      "avg_sentiment": 0.5704
+    },
+    "Energy": {
+      "avg_improvement": -0.0103,
+      "stock_count": 1,
+      "avg_baseline": 0.5361,
+      "avg_sentiment": 0.5258
+    },
+    "FMCG": {
+      "avg_improvement": 0.0103,
+      "stock_count": 1,
+      "avg_baseline": 0.543,
+      "avg_sentiment": 0.5533
+    },
+    "Financial Services": {
+      "avg_improvement": -0.0103,
+      "stock_count": 1,
+      "avg_baseline": 0.5498,
+      "avg_sentiment": 0.5395
+    },
+    "IT": {
+      "avg_improvement": 0.0172,
+      "stock_count": 2,
+      "avg_baseline": 0.5378,
+      "avg_sentiment": 0.555
+    },
+    "Telecom": {
+      "avg_improvement": -0.0034,
+      "stock_count": 1,
+      "avg_baseline": 0.5292,
+      "avg_sentiment": 0.5258
+    }
+  },
+  "key_insights": [
+    "Sentiment-enhanced model shows 2.32% average improvement over baseline.",
+    "Improvement is not statistically significant (p=0.0642 >= 0.05).",
+    "Sentiment features improved performance for 6/10 stocks (60.0%).",
+    "Best performing sector: Banking with 0.0258 average improvement.",
+    "Effect size (Cohen's d): 0.6667 - Medium to large effect.",
+    "Best improvement: INFY (+7.43%).",
+    "Largest degradation: BAJFINANCE (-1.88%)."
+  ]
 }
